@@ -1,0 +1,22 @@
+<%-   include('C:/Users/PROJECT/partials/header.ejs')  %>
+
+<body>
+    <%-   include('C:/Users/PROJECT/partials/header.ejs')  %>
+    <div class = "login content"> 
+
+    <form action="/login" method ="post"> 
+        <label for ="role">You are logging in as a:</label>
+        <select id="role" name="role">
+            <option value="NEPEducator">NEP Educator</option>
+             <option value="Student">Student</option>
+            
+            </select><br>
+        <label for ="email_id"> Email-Id:</label>
+        <input type="text" id="email_id" name="email_id" required><br>
+        <label for ="password"> New Password</label>
+        <input type="text" id="password" name="password" required><br>
+        <button> Submit</button>   
+   </form>
+   </div>
+   </body>
+</html>

@@ -1,0 +1,17 @@
+<%-   include('C:/Users/naidila/OneDrive/Desktop/Naidila/PROJECT/partials/header.ejs')  %>
+
+
+<body>
+    <%-   include('C:/Users/naidila/OneDrive/Desktop/Naidila/PROJECT/partials/nav.ejs')  %>
+<div class =" common content">
+    <h3> <%= title %> Details</h3><br>
+    <form action="/<%= title %>"  encrypt="multipart/form-data"method="post">
+
+        <label for ="<%= title %>"><%= title %></label>
+        <input type="file" id="<%= title %>" name="SHARE"  accept="image/*" required><br><br>
+       <input type="submit" value=" Upload  <%= title %>" >
+
+        </form>
+
+</div>
+</body>

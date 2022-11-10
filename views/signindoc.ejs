@@ -1,0 +1,35 @@
+<%-   include('C:/Users/PROJECT/partials/header.ejs')  %>
+
+<body>
+
+    <%-   include('C:/Users/PROJECT/partials/nav.ejs')  %>
+
+    <div class=" signindoc content ">
+        <form action="/signindoc" method ="post"> 
+        
+        <label for ="name"> Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="age"> Age:</label>
+        <input type="text" id="age" name = "age" required><br><br>
+        <label for="email_id">Email_Id:</label>
+        <input type="text" id="email_id" name = "email_id" required><br><br>
+        <label for="phone_no">Phone Number:</label>
+        <input type="text" id="phone_no" name = "phone_no" required><br><br>
+        <label for="Institute">Institute:</label>
+        <input type="text" id="Institute" name = "Institute" required><br><br>
+        <label for ="password"> New Password:</label>
+        <input type="text" id="password" name="password" required><br><br>
+       
+
+        
+       
+       
+
+            <label for="ID">Registration ID</label>
+                <input type="text" id="ID" name = "ID" required><br>
+            <button> Submit</button>
+        <p>Already have an account? <a href="/logindoc">Login</a></p>
+    </form>
+    </div>
+</body>
+</html>
